@@ -1,0 +1,292 @@
+---
+# Frontmatter needed
+---
+.reset{} /* Reset coding errors */
+a.heading-link {
+    visibility: hidden;
+    padding-right: 6px;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    top: calc((0.7em - 10px)/2);
+    left: -0.8em;
+    left: calc(-0.7em - 3px);
+    background: url("/link.svg");
+    display: inline-block;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    width: 0.7em;
+    width: calc(0.7em - 2px);
+    height: 0.7em;
+    height: calc(0.7em - 2px);
+}
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+}
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    visibility: visible;
+}
+.hljs {
+    background: inherit;
+}
+html {
+    color: #bfbfbf;
+    filter: contrast(100%) brightness(100%) saturate(100%);
+    color: rgb(180, 188, 202) !important;
+    background: rgb(31, 31, 31) !important;
+}
+
+body {
+    background-image: none !important;
+    margin: 0 auto;
+    font-family: Roboto, Georgia, Palatino, serif;
+    line-height: 1;
+    max-width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+}
+.content {
+    flex-grow: 1;
+}
+@media(min-width: 675px) {
+    body {
+        margin-left: calc((100vw - 660px)/3);
+    }
+}
+@media(max-width: 1000px) and (min-width: 660px) {
+    body {
+        margin-left: calc((100vw - 660px)/4);
+    }
+}
+h1, h2, h3, h4 {
+    color: rgb(191, 191, 191);
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+    margin: 24px 0 6px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+a {
+    color: rgb(157, 157, 231);
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a.active {
+    color: rgb(188, 221, 255);
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 600px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    margin: 0;
+    border-left: 2px solid rgb(180, 188, 202);
+    padding: 0em 2em;
+    max-width: 476px;
+}
+blockquote p {
+    color: rgb(180, 188, 202);
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+table {
+    border-collapse: collapse;
+    margin: 1em 1em;
+    border: 1px solid #CCC;
+}
+table thead td {
+    color: #666;
+}
+table td {
+    padding: 0.5em 1em;
+    border: 1px solid #CCC;
+}
+footer {
+    margin-top: 30px;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+input,
+select,
+textarea,
+button {
+    color: #bfbfbf;
+    background-color: #1f1f1f;
+}
+
+font {
+    color: #bfbfbf;
+}
+
+aside {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: calc((100vw - 660px)/3*2);
+    height: calc(100vh - 20px);
+    overflow-x: auto;
+}
+@media (max-width: 1000px) {
+    aside {
+        width: calc((100vw - 660px)/4*3);
+    }
+}
+@media (max-width: 910px) {
+    aside {
+        display: none;
+    }
+}
+
+.blue {
+    color: rgb(153, 153, 230);
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: rgb(230, 153, 230);
+}
+
+::selection {
+    background: #338ccc;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #338ccc;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #3e4346 !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #646464 !important;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #3e4346 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #242424 !important;
+    border: 2px solid #3e4346 !important;
+}
+
+::-webkit-scrollbar-corner {}
+
+::-webkit-resizer {}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background:
+        linear-gradient(130deg, #696969 40%, rgba(255, 0, 0, 0) 41%),
+        linear-gradient(230deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #696969 40%, rgba(0, 0, 0, 0) 31%);
+    background-color: #b6b6b6;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(310deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(50deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #696969 40%, rgba(0, 0, 0, 0) 31%);
+    background-color: #b6b6b6;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #696969 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #b6b6b6;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #696969 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #696969 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #b6b6b6;
+}
+
+.hljs{display:block;overflow-x:auto;padding:.5em;color:#abb2bf;}
+.hljs-comment,.hljs-quote{color:#9199a7;font-style:italic}
+.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}
+.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}
+.hljs-literal{color:#56b6c2}
+.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#98c379}
+.hljs-built_in,.hljs-class .hljs-title{color:#e6c07b}
+.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}
+.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}
+.hljs-emphasis{font-style:italic}
+.hljs-strong{font-weight:700}
+.hljs-link{text-decoration:underline}

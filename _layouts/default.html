@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {% unless page.isTop %}
+        <span>
+            <a href="..">Go back</a> | {{ page.dir }}
+        </span>
+    {% endunless %}
+    <div class="content">
+        <main>
+            {{ content }}
+        </main>
+        <aside>
+            {{ content | toc_only }}
+        </aside>
+    </div>
+    <footer>
+        {% if page.footer %}
+            {{page.footer}}
+        {% else %}
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a> (Atribution, non-commercial use and usage of same license required) unless otherwise noted. <br>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.cs">CC BY-NC-SA</a> (Atribuce, nekomerční použití a použití stejné license vyžadováno) není-li řečeno jinak. <br>
+        {% endif %}
+    </footer>
+
+  </body>
+
+</html>
