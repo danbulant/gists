@@ -15,7 +15,7 @@
             {{ content }}
         </main>
         <aside>
-            {{ content | toc_only }}
+            {% include toc.html html=content %}
         </aside>
     </div>
     <footer>
